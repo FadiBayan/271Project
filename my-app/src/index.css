@@ -1,0 +1,193 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure Fullscreen Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("./background.jpg") no-repeat center center fixed;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Single Form Box for both Login & Signup */
+.form-box {
+  background: rgba(30, 30, 50, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  width: 420px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Tab Buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.toggle-buttons button.active {
+  background: linear-gradient(145deg, #0077b6, #00a6fb);
+  color: white;
+  box-shadow: 0px 4px 15px rgba(0, 180, 255, 0.6);
+}
+
+/* Animated Title */
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e8f8ff;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(232, 248, 255, 0.8),
+               0px 0px 20px rgba(0, 200, 255, 0.8),
+               0px 0px 40px rgba(0, 150, 255, 0.6);
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.input-group input:focus {
+  border: 2px solid #00a6fb;
+  box-shadow: 0px 0px 15px rgba(0, 180, 255, 0.8);
+}
+
+/* Login & Signup Buttons */
+.login-btn, .signup-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #0077b6, #00a6fb);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 180, 255, 0.8);
+  background: linear-gradient(145deg, #00a6fb, #0077b6);
+}
+
+/* Smooth Hover Effect */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Password Input */
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Cabinet Fields Animation */
+#cabinetFields {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+#cabinetFields.show {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

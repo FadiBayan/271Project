@@ -1,0 +1,282 @@
+/* Login & Signup Form Container */
+.form-box {
+    background: rgba(30, 30, 50, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 420px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Login & Signup Buttons */
+  .toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .toggle-buttons button.active {
+    background: linear-gradient(145deg, #ff7b00, #ffae00); /* Orange gradient */
+    color: white;
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.6);
+  }
+  
+  /* Animated Title */
+  h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffe7c4;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255, 231, 196, 0.8),
+                 0px 0px 20px rgba(255, 165, 0, 0.8),
+                 0px 0px 40px rgba(255, 140, 0, 0.6);
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  /* Focus Effect */
+  .input-group input:focus {
+    border: 2px solid #ffae00; /* Orange focus effect */
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.8);
+  }
+  
+  /* Login & Signup Button */
+  .login-btn, .signup-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #ff7b00, #ffae00);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+  }
+  
+  .login-btn:hover, .signup-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.8);
+    background: linear-gradient(145deg, #ffae00, #ff7b00);
+  }
+
+  .login-container{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border:2px solid black;
+    border-radius: 7%;
+    box-shadow: 10px 20px 30px rgba(255, 157, 0, 0.242), 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  #no_account{
+    color:aliceblue;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  #no_account:hover{
+    color:#ffae00
+  }
+  /* Remove the default radio button styling */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ffae00; /* Orange color */
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Style the checked radio button */
+input[type="radio"]:checked {
+  background: #ffae00;
+  box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8);
+}
+
+/* Fix Sign Up button styling */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background: linear-gradient(145deg, #ff7b00, #ffae00);
+    color: white;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  }
+  
+  /* Hover effect */
+  button[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.8);
+  }
+  
+  /* Make Student & Cabinet Labels Bigger */
+  .input-group {
+    display: flex;
+    flex-direction: column; /* Stack them vertically */
+    gap: 10px; /* Add space between Student & Cabinet */
+  }
+  
+  .input-group label {
+    font-size: 22px; /* Increase text size */
+    font-weight: bold; /* Make text bold */
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Move text further away from the radio button */
+    cursor: pointer; /* Make clicking the label also select the radio button */
+  }
+  
+  /* Increase the radio button size */
+  .input-group input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ffae00; /* Orange radio button */
+  }
+
+  /* 🌟 Fullscreen Centering for Signup */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(10, 42, 74, 0.9), rgba(10, 42, 74, 0.85));
+}
+
+/* 🌟 Glass Effect Box */
+.signup-box {
+    background: rgba(30, 30, 50, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    width: 420px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🌟 Animated Title */
+.signup-box h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffe7c4;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(255, 231, 196, 0.8),
+                 0px 0px 20px rgba(255, 165, 0, 0.8),
+                 0px 0px 40px rgba(255, 140, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+/* 🌟 Input Fields */
+.signup-box .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.signup-box .input-group label {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-box .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+/* 🌟 Input Focus Effect */
+.signup-box .input-group input:focus {
+    border: 2px solid #ffae00; /* Orange focus effect */
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.8);
+}
+
+/* 🌟 Signup Button */
+.signup-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #ff7b00, #ffae00);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+.signup-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 165, 0, 0.8);
+    background: linear-gradient(145deg, #ffae00, #ff7b00);
+}
+
+/* 🌟 Already Have Account Link */
+#have_account {
+    color: aliceblue;
+    transition: all 0.3s ease-in-out;
+}
+
+#have_account:hover {
+    color: #ffae00;
+}

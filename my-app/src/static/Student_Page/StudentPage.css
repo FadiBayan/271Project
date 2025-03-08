@@ -1,0 +1,221 @@
+/* 🎨 Student Page Wrapper */
+.student-container {
+    display: flex;
+    height: 100vh;
+    background: #0a2a4a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🎨 Sidebar Styling */
+.student-container .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    background: #081c36;
+    padding-top: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.student-container .sidebar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.student-container .sidebar button:hover,
+.student-container .sidebar button.active {
+    background: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+/* 🎨 Content Area */
+.student-container .content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 🎨 Dashboard Title */
+.student-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 🎨 Event Grid */
+.student-container .event-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+}
+
+/* 🎨 Event Card */
+.student-container .event-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+    width: 280px;
+}
+
+.student-container .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(255, 165, 0, 0.5);
+}
+
+/* 🎨 Club Header */
+.student-container .club-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.student-container .club-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.student-container .club-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0a2a4a;
+}
+
+/* 🎨 Event Info */
+.student-container .event-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* 🎨 Register Button */
+.student-container .register-button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.student-container .register-button:hover {
+    background: #e68900;
+}
+
+/* 🎨 Profile Section */
+.student-container .profile-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 50%;
+}
+
+.student-container .profile-form input,
+.student-container .profile-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 🎨 Save Profile Button */
+.student-container .save-profile-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.student-container .save-profile-button:hover {
+    background: #0056b3;
+}
+
+/* 🎨 Modals */
+.student-container .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-container .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.student-container .confirm-button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.student-container .cancel-button {
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 🎨 Logout Button */
+.student-container .logout-button {
+    margin-top: auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.student-container .logout-button:hover {
+    color: red;
+}
+
+/* 🎨 Responsive Design */
+@media (max-width: 768px) {
+    .student-container .event-grid {
+        width: 100%;
+    }
+    .student-container .profile-form {
+        width: 90%;
+    }
+}
